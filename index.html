@@ -1,49 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Fitness Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fit with Me — Workouts & Plans</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>💪 Fit with Me</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#workouts">Workouts</a>
-      <a href="#nutrition">Nutrition</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">💪 Fit with Me</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#workouts">Workouts</a>
+        <a href="#nutrition">Nutrition</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="home">
-    <h2>Welcome to Your Fitness Journey!</h2>
-    <p>Get stronger, feel better, and live your healthiest life with our free workouts and nutrition plans.</p>
-    <a href="#workouts" class="btn">Start Now</a>
-  </section>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Get stronger. Feel better. Start today.</h2>
+          <p>Free workout plans, quick video guides, and simple nutrition tips — perfect for busy people who want real results.</p>
+          <a class="btn" href="#workouts">Browse Workouts</a>
+        </div>
+        <div class="hero-img">
+          <img src="https://images.unsplash.com/photo-1571019613914-85f342c6a0e3?w=1200&q=80&auto=format&fit=crop" alt="Person exercising" />
+        </div>
+      </div>
+    </section>
 
-  <section id="workouts">
-    <h2>🏋️‍♀️ Workouts</h2>
-    <ul>
-      <li>Full Body HIIT (20 mins)</li>
-      <li>Upper Body Strength (30 mins)</li>
-      <li>Yoga Flow (15 mins)</li>
-    </ul>
-  </section>
+    <section id="workouts" class="section">
+      <div class="container">
+        <h3 class="section-title">🏋️‍♀️ Popular Workouts</h3>
 
-  <section id="nutrition">
-    <h2>🥗 Nutrition Tips</h2>
-    <p>Eat clean, stay hydrated, and fuel your body for success.</p>
-  </section>
+        <div class="cards-grid">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001d9?w=800&q=60&auto=format&fit=crop" alt="HIIT workout" />
+            <div class="card-body">
+              <h4>Full Body HIIT — 20 min</h4>
+              <p>High-intensity intervals to burn fat and build endurance. No equipment required.</p>
+              <a class="card-btn" href="#contact">Join Challenge</a>
+            </div>
+          </article>
 
-  <section id="contact">
-    <h2>📧 Contact Me</h2>
-    <p>Follow me on <a href="https://instagram.com">Instagram</a> or email me at <strong>youremail@example.com</strong></p>
-  </section>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1599058917218-3e0f6f8a3c24?w=800&q=60&auto=format&fit=crop" alt="Strength training" />
+            <div class="card-body">
+              <h4>Upper Body Strength — 30 min</h4>
+              <p>Simple progressions to build strength with dumbbells or household items.</p>
+              <a class="card-btn" href="#contact">Get Program</a>
+            </div>
+          </article>
 
-  <footer>
-    <p>© 2025 Fit with Me | Made with ❤️</p>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1526403224743-9e73f3f4b4a9?w=800&q=60&auto=format&fit=crop" alt="Yoga flow" />
+            <div class="card-body">
+              <h4>Yoga Flow — 15 min</h4>
+              <p>Mobility + calm breathing. Perfect for recovery days and better sleep.</p>
+              <a class="card-btn" href="#contact">Try Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="nutrition" class="section alt">
+      <div class="container">
+        <h3 class="section-title">🥗 Nutrition Tips</h3>
+        <div class="two-col">
+          <div>
+            <h4>Simple Plate Rule</h4>
+            <p>Fill half with vegetables, a quarter with lean protein, and the rest with whole carbs. Hydrate well.</p>
+          </div>
+          <div>
+            <h4>Quick Meal Idea</h4>
+            <p>Grilled chicken, brown rice, steamed veg + olive oil. Prep 2-3 meals in 30 minutes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h3 class="section-title">📧 Contact & Join</h3>
+        <p>Want the full 30-day program or add videos? DM me on Instagram or email below.</p>
+        <div class="contact-box">
+          <div>Instagram: <a href="https://instagram.com" target="_blank" rel="noopener">@yourhandle</a></div>
+          <div>Email: <strong>youremail@example.com</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Fit with Me • Built on GitHub Pages</p>
+    </div>
   </footer>
 </body>
 </html>
+
